@@ -5,7 +5,7 @@ namespace ClockRunner
 {
     public partial class RunnerSprite : UserControl, IObserver
     {
-        public static float trackLength = 1f;
+        public static float trackLength = 4f;
         private string runnerName;
         private double speed;
         private double distanceCovered;
@@ -34,7 +34,7 @@ namespace ClockRunner
             distanceCovered = 0;
             hasFinished = false;
             this.trackLengthPixel = trackLength;
-            speed = rand.Next(100, 200) / 10.0f;
+            speed = rand.Next(1000, 2000) / 100.0f;
 
             this.Location = new System.Drawing.Point(x, y);
             this.Size = new System.Drawing.Size(trackLength + 50, 60);

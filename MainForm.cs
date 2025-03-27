@@ -14,7 +14,7 @@ namespace ClockRunner
         private Label winnerLabel;
         private const int TRACK_LENGTH = 1000;
         private string winner = null;
-        private const int NUMBER_OF_RUNNERS = 10;
+        private const int NUMBER_OF_RUNNERS = 5;
         private List<RunnerSprite> finishedRunners;
 
         public MainForm()
@@ -22,7 +22,7 @@ namespace ClockRunner
             clock = new MarathonClock();
             runners = new List<RunnerSprite>();
             finishedRunners = new List<RunnerSprite>();
-            this.Text = "Marathon Race Simulation with Sprites";
+            this.Text = "Marathon Race Simulation";
             this.Width = TRACK_LENGTH + 100;
             this.Height = 150 + NUMBER_OF_RUNNERS * 70;
 
